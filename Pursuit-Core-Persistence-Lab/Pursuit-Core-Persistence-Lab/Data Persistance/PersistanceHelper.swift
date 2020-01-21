@@ -43,7 +43,7 @@ class PersistanceHelper{
     static func load() throws -> [Photo] {
         let url = FileManager.pathToDocumentsDirectory(with: filename)
         if FileManager.default.fileExists(atPath: url.path){
-            if let data = FileManager.default.contents(atPath: filename) {
+            if let data = FileManager.default.contents(atPath: url.path) {
                 do {
                     try photos = PropertyListDecoder().decode([Photo].self, from: data)
                 } catch {
