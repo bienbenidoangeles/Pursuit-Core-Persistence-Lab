@@ -19,13 +19,14 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         configureData()
     }
+    
         
     @IBAction func favoriteButtonPressed(_ sender: UIButton){
         //save favorited podcast
         guard let validPhoto = passedObj else {
             fatalError("failed to unwrap passed photo")
         }
-        let savedPhoto = Photo(largeImageURL: validPhoto.largeImageURL, webFormatHeight: validPhoto.webFormatHeight, webFormatWidth: validPhoto.webFormatWidth, likes: validPhoto.likes, id: validPhoto.id, views: validPhoto.views, comments: validPhoto.comments, webFormatURL: validPhoto.webFormatURL, tags: validPhoto.tags, downloads: validPhoto.downloads, user: validPhoto.user, previewURL: validPhoto.previewURL, favorited: true)
+        let savedPhoto = Photo(largeImageURL: validPhoto.largeImageURL, webformatHeight: validPhoto.webformatHeight, webformatWidth: validPhoto.webformatWidth, likes: validPhoto.likes, id: validPhoto.id, views: validPhoto.views, comments: validPhoto.comments, webformatURL: validPhoto.webformatURL, tags: validPhoto.tags, downloads: validPhoto.downloads, user: validPhoto.user, previewURL: validPhoto.previewURL, favorited: true)
         do {
             try PersistanceHelper.create(photo: savedPhoto)
             self.showAlert(title: "Success", message: "Saved Photo")

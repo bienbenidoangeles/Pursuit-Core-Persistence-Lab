@@ -27,6 +27,14 @@ class FavoritesViewController: UIViewController {
         delegatesAndDataSources()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? DetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("failed to segue")
+        }
+        let favorite = favorites[indexPath.row]
+        detailVC.passedObj = favorite
+    }
+    
     func configureRefreshControl(){
         refreshControl = UIRefreshControl()
         tableView.refreshControl = refreshControl

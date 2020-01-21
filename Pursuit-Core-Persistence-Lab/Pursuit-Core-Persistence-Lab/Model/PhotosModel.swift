@@ -15,13 +15,13 @@ struct PhotoData: Codable {
 
 struct Photo: Codable {
     let largeImageURL: String
-    let webFormatHeight: Int
-    let webFormatWidth: Int
+    let webformatHeight: Int
+    let webformatWidth: Int
     let likes: Int
     let id:Int
     let views: Int
     let comments: Int
-    let webFormatURL: String
+    let webformatURL: String
     let tags: String
     let downloads: Int
     let user: String
