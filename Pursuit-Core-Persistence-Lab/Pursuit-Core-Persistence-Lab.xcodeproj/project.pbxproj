@@ -3,17 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F110274523D22F48000758F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110274423D22F48000758F7 /* AppDelegate.swift */; };
 		F110274723D22F48000758F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110274623D22F48000758F7 /* SceneDelegate.swift */; };
-		F110274923D22F48000758F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110274823D22F48000758F7 /* ViewController.swift */; };
+		F110274923D22F48000758F7 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110274823D22F48000758F7 /* PhotosViewController.swift */; };
 		F110274C23D22F48000758F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110274A23D22F48000758F7 /* Main.storyboard */; };
 		F110274E23D22F4C000758F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F110274D23D22F4C000758F7 /* Assets.xcassets */; };
 		F110275123D22F4C000758F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F110274F23D22F4C000758F7 /* LaunchScreen.storyboard */; };
 		F110275C23D22F4C000758F7 /* Pursuit_Core_Persistence_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110275B23D22F4C000758F7 /* Pursuit_Core_Persistence_LabTests.swift */; };
+		F110276A23D703FD000758F7 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110276923D703FD000758F7 /* PhotosModel.swift */; };
+		F110276C23D709CA000758F7 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110276B23D709CA000758F7 /* FavoritesViewController.swift */; };
+		F110276E23D709D7000758F7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110276D23D709D7000758F7 /* DetailViewController.swift */; };
+		F110277123D70A31000758F7 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110277023D70A31000758F7 /* PhotosCollectionViewCell.swift */; };
+		F110277523D70CA8000758F7 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = F110277423D70CA8000758F7 /* ImageKit */; };
+		F110277723D70CD2000758F7 /* PhotosAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110277623D70CD2000758F7 /* PhotosAPIClient.swift */; };
+		F110277A23D70FFA000758F7 /* ShowAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110277923D70FFA000758F7 /* ShowAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,7 @@
 		F110274123D22F48000758F7 /* Pursuit-Core-Persistence-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit-Core-Persistence-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F110274423D22F48000758F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F110274623D22F48000758F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F110274823D22F48000758F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F110274823D22F48000758F7 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		F110274B23D22F48000758F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F110274D23D22F4C000758F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F110275023D22F4C000758F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +45,12 @@
 		F110275723D22F4C000758F7 /* Pursuit-Core-Persistence-LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pursuit-Core-Persistence-LabTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F110275B23D22F4C000758F7 /* Pursuit_Core_Persistence_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pursuit_Core_Persistence_LabTests.swift; sourceTree = "<group>"; };
 		F110275D23D22F4C000758F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F110276923D703FD000758F7 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		F110276B23D709CA000758F7 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		F110276D23D709D7000758F7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F110277023D70A31000758F7 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		F110277623D70CD2000758F7 /* PhotosAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPIClient.swift; sourceTree = "<group>"; };
+		F110277923D70FFA000758F7 /* ShowAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F110277523D70CA8000758F7 /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +93,13 @@
 		F110274323D22F48000758F7 /* Pursuit-Core-Persistence-Lab */ = {
 			isa = PBXGroup;
 			children = (
-				F110274423D22F48000758F7 /* AppDelegate.swift */,
-				F110274623D22F48000758F7 /* SceneDelegate.swift */,
-				F110274823D22F48000758F7 /* ViewController.swift */,
+				F110277823D70FBA000758F7 /* ViewController+Extensions */,
+				F110277223D70C36000758F7 /* NetworkServices */,
+				F110276F23D70A0E000758F7 /* Cell */,
+				F110276823D703A7000758F7 /* Model */,
+				F110276723D7037A000758F7 /* Support Files */,
+				F110276623D7035C000758F7 /* Controllers */,
 				F110274A23D22F48000758F7 /* Main.storyboard */,
-				F110274D23D22F4C000758F7 /* Assets.xcassets */,
 				F110274F23D22F4C000758F7 /* LaunchScreen.storyboard */,
 				F110275223D22F4C000758F7 /* Info.plist */,
 			);
@@ -97,6 +113,58 @@
 				F110275D23D22F4C000758F7 /* Info.plist */,
 			);
 			path = "Pursuit-Core-Persistence-LabTests";
+			sourceTree = "<group>";
+		};
+		F110276623D7035C000758F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F110274823D22F48000758F7 /* PhotosViewController.swift */,
+				F110276B23D709CA000758F7 /* FavoritesViewController.swift */,
+				F110276D23D709D7000758F7 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F110276723D7037A000758F7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F110274423D22F48000758F7 /* AppDelegate.swift */,
+				F110274623D22F48000758F7 /* SceneDelegate.swift */,
+				F110274D23D22F4C000758F7 /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		F110276823D703A7000758F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F110276923D703FD000758F7 /* PhotosModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F110276F23D70A0E000758F7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F110277023D70A31000758F7 /* PhotosCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F110277223D70C36000758F7 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				F110277623D70CD2000758F7 /* PhotosAPIClient.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		F110277823D70FBA000758F7 /* ViewController+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F110277923D70FFA000758F7 /* ShowAlertController.swift */,
+			);
+			path = "ViewController+Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +183,9 @@
 			dependencies = (
 			);
 			name = "Pursuit-Core-Persistence-Lab";
+			packageProductDependencies = (
+				F110277423D70CA8000758F7 /* ImageKit */,
+			);
 			productName = "Pursuit-Core-Persistence-Lab";
 			productReference = F110274123D22F48000758F7 /* Pursuit-Core-Persistence-Lab.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +236,9 @@
 				Base,
 			);
 			mainGroup = F110273823D22F48000758F7;
+			packageReferences = (
+				F110277323D70CA8000758F7 /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = F110274223D22F48000758F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -200,8 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F110274923D22F48000758F7 /* ViewController.swift in Sources */,
+				F110274923D22F48000758F7 /* PhotosViewController.swift in Sources */,
+				F110277123D70A31000758F7 /* PhotosCollectionViewCell.swift in Sources */,
+				F110277A23D70FFA000758F7 /* ShowAlertController.swift in Sources */,
 				F110274523D22F48000758F7 /* AppDelegate.swift in Sources */,
+				F110276A23D703FD000758F7 /* PhotosModel.swift in Sources */,
+				F110276E23D709D7000758F7 /* DetailViewController.swift in Sources */,
+				F110276C23D709CA000758F7 /* FavoritesViewController.swift in Sources */,
+				F110277723D70CD2000758F7 /* PhotosAPIClient.swift in Sources */,
 				F110274723D22F48000758F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F110277323D70CA8000758F7 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F110277423D70CA8000758F7 /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F110277323D70CA8000758F7 /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F110273923D22F48000758F7 /* Project object */;
 }
