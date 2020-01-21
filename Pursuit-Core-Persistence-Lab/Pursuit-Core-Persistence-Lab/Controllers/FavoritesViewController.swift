@@ -106,6 +106,7 @@ extension FavoritesViewController: UITableViewDataSource{
             case .success(let image):
                 DispatchQueue.main.async {
                     cell.imageView?.image = image
+                    cell.reloadInputViews()
                 }
             }
         })
