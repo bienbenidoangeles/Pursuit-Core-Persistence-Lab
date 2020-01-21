@@ -97,16 +97,16 @@ extension FavoritesViewController: UITableViewDataSource{
         let favorite = favorites[indexPath.row]
         cell.textLabel?.text = "Id: \(favorite.id)"
         cell.detailTextLabel?.text = "User: \(favorite.user)"
-        cell.imageView?.getImage(with: favorite.previewURL, completion: { (result) in
+        cell.imageView?.getImage(with: favorite.previewURL, completion: { [weak cell](result) in
             switch result{
             case .failure:
                 DispatchQueue.main.async {
-                    cell.imageView?.image = UIImage(systemName: "exclaimationmark-triangle")
+                    cell?.imageView?.image = UIImage(systemName: "exclaimationmark-triangle")
                 }
             case .success(let image):
                 DispatchQueue.main.async {
-                    cell.imageView?.image = image
-                    cell.reloadInputViews()
+                    cell?.imageView?.image = image
+                    tableView.reloadData()
                 }
             }
         })
