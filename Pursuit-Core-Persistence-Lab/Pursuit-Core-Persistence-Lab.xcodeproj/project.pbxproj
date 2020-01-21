@@ -109,7 +109,7 @@
 				F110274A23D22F48000758F7 /* Main.storyboard */,
 				F110274F23D22F4C000758F7 /* LaunchScreen.storyboard */,
 				F110275223D22F4C000758F7 /* Info.plist */,
-				F110278023D72A76000758F7 /* Secrets.swift */,
+				F110278223D72B3A000758F7 /* Secrets */,
 			);
 			path = "Pursuit-Core-Persistence-Lab";
 			sourceTree = "<group>";
@@ -182,6 +182,14 @@
 				F110277E23D71DEF000758F7 /* PersistanceHelper.swift */,
 			);
 			path = "Data Persistance";
+			sourceTree = "<group>";
+		};
+		F110278223D72B3A000758F7 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				F110278023D72A76000758F7 /* Secrets.swift */,
+			);
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
