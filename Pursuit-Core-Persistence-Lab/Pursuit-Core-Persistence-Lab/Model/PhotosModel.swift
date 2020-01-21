@@ -25,4 +25,5 @@ struct Photo: Codable {
     let downloads: Int
     let user: String
     let previewURL: String
+    var favorited: Bool?
 }

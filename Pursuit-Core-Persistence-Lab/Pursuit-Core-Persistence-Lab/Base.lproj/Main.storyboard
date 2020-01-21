@@ -138,6 +138,9 @@
                                 <rect key="frame" x="180" y="592" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Favorite"/>
+                                <connections>
+                                    <action selector="favoriteButtonPressed:" destination="Jai-Qn-EZz" eventType="touchUpInside" id="Axc-RT-qY6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -148,6 +151,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M0R-eR-MXT"/>
                     </view>
+                    <connections>
+                        <outlet property="photoDataLabel" destination="ppJ-Ss-xqm" id="YQf-Aj-Hew"/>
+                        <outlet property="photoImageView" destination="cn9-tj-oGG" id="w3T-e9-cYn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ie9-dp-66M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -27,6 +27,20 @@ class PhotosViewController: UIViewController {
         loadData(with: "")
         delegatesAndDataSources()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let cell = sender as? PhotosCollectionViewCell else {
+            fatalError("failed to downcast as Photo Cell")
+        }
+        
+        guard let detailVC = segue.destination as? DetailViewController, let indexPath = photosCollectionView.indexPath(for: cell) else{
+            fatalError("failed to segue to detailViewController")
+        }
+        
+        let photo = photos[indexPath.row]
+        
+        detailVC.passedObj = photo
+    }
 
     private func delegatesAndDataSources(){
         searchBar.delegate = self
