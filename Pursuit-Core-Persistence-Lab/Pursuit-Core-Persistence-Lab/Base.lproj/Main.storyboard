@@ -152,6 +152,7 @@
                         <viewLayoutGuide key="safeArea" id="M0R-eR-MXT"/>
                     </view>
                     <connections>
+                        <outlet property="favoriteButton" destination="qXU-Gx-Jym" id="ZvX-ha-Zjz"/>
                         <outlet property="photoDataLabel" destination="ppJ-Ss-xqm" id="YQf-Aj-Hew"/>
                         <outlet property="photoImageView" destination="cn9-tj-oGG" id="w3T-e9-cYn"/>
                     </connections>
