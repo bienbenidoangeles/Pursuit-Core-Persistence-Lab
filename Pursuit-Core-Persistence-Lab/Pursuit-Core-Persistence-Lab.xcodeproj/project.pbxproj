@@ -23,6 +23,7 @@
 		F110277A23D70FFA000758F7 /* ShowAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110277923D70FFA000758F7 /* ShowAlertController.swift */; };
 		F110277D23D71CFA000758F7 /* FileManger+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110277C23D71CFA000758F7 /* FileManger+Extensions.swift */; };
 		F110277F23D71DEF000758F7 /* PersistanceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110277E23D71DEF000758F7 /* PersistanceHelper.swift */; };
+		F110278123D72A76000758F7 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110278023D72A76000758F7 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		F110277923D70FFA000758F7 /* ShowAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAlertController.swift; sourceTree = "<group>"; };
 		F110277C23D71CFA000758F7 /* FileManger+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManger+Extensions.swift"; sourceTree = "<group>"; };
 		F110277E23D71DEF000758F7 /* PersistanceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceHelper.swift; sourceTree = "<group>"; };
+		F110278023D72A76000758F7 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				F110274A23D22F48000758F7 /* Main.storyboard */,
 				F110274F23D22F4C000758F7 /* LaunchScreen.storyboard */,
 				F110275223D22F4C000758F7 /* Info.plist */,
+				F110278023D72A76000758F7 /* Secrets.swift */,
 			);
 			path = "Pursuit-Core-Persistence-Lab";
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F110274923D22F48000758F7 /* PhotosViewController.swift in Sources */,
+				F110278123D72A76000758F7 /* Secrets.swift in Sources */,
 				F110277123D70A31000758F7 /* PhotosCollectionViewCell.swift in Sources */,
 				F110277A23D70FFA000758F7 /* ShowAlertController.swift in Sources */,
 				F110274523D22F48000758F7 /* AppDelegate.swift in Sources */,

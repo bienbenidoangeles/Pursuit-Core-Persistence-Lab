@@ -18,6 +18,7 @@ struct Photo: Codable {
     let webFormatHeight: Int
     let webFormatWidth: Int
     let likes: Int
+    let id:Int
     let views: Int
     let comments: Int
     let webFormatURL: String
